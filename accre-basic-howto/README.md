@@ -1,5 +1,5 @@
-# README.md
-This file will detail how to setup and access ACCRE and general Jupyter notebooks.  Start here.  To skip to the nitty-gritty, click [here](#accessing-accre).
+# How to Access ACCRE and Run a Jupyter Notebook from a Cloned Repository
+This file details how to setup and access ACCRE and general Jupyter notebooks.  Start here.  To skip to the nitty-gritty, click [here](#accessing-accre).
 
 ## Introduction
 Welcome to Jupyter notebooks and ACCRE!  Why do people use either of these things?
@@ -28,26 +28,26 @@ Now that you have your ACCRE account, let's log onto ACCRE.  Visit the [ACCRE po
 Navigate to the top menu and click on `Interactive Apps`.  From the dropdown menu, choose `Jupyter notebook` or `Jupyter notebook (GPU)`.  The difference is that the first one uses CPU only, and the latter also uses GPUs.  The fields for the GPU and CPU form should be relatively similar.  If your collaborator has shared with you the number of resources, use their estimates.  Otherwise, you may use the defaults here:
 
 ### GPU Jupyter Default Options
-**GPU Enabled Slurm Account**: `p_dsi_acc`
-**Number of hours**: `4`
-**Number of requested GPU resources**:" `1`
-**GPU Architecture**: `Pascal`
-**Working directory**: `${ACCRE_RUNTIME_DIR}`
-**Python version**: `Python 3.6.3 / Anaconda 5.0.1`
-**Use a virtual environment checkbox**: `uncheck`
-**Python or Conda Virtual Environment**: `leave blank`
+- **GPU Enabled Slurm Account**: `p_dsi_acc`
+- **Number of hours**: `4`
+- **Number of requested GPU resources**:" `1`
+- **GPU Architecture**: `Pascal`
+- **Working directory**: `${ACCRE_RUNTIME_DIR}`
+- **Python version**: `Python 3.6.3 / Anaconda 5.0.1`
+- **Use a virtual environment checkbox**: `uncheck`
+- **Python or Conda Virtual Environment**: `leave blank`
 
 Ask your collaborator more about these settings.  For example, if using fast.ai, you may want to use a `Tesla` GPU architecture with the `Python/3.6.3 GCC/6.4.0-2.28` Python version in the virtual environment stored at `/labs/accre_public/pascal/fast.ai.v2`.  Ask them - they'll know!
 
 ### CPU Jupyter Default Options
-**Number of hours**: `4`
-**Maximum memory (GB)**: `4`
-**Number of CPU cores**: `1`
-**CPU Architecture**: `Any`
-**Working Directory**: `Home`
-**Python version**: `Python 3.6.3 / Anaconda 5.0.1`
-**Use a virtual environment checkbox**: `uncheck`
-**Python or Conda Virtual Environment**: `leave blank`
+- **Number of hours**: `4`
+- **Maximum memory (GB)**: `4`
+- **Number of CPU cores**: `1`
+- **CPU Architecture**: `Any`
+- **Working Directory**: `Home`
+- **Python version**: `Python 3.6.3 / Anaconda 5.0.1`
+- **Use a virtual environment checkbox**: `uncheck`
+- **Python or Conda Virtual Environment**: `leave blank`
 
 Make sure to ask your collaborator further about these options.
 
@@ -57,7 +57,7 @@ Now that you've made your options for your Jupyter work environment click `Launc
 The user interface (UI) that you now see is the **Jupyter Dashboard**.  If you used the default options above for the GPU, you should see no files listed.  If you used the CPU option, you should see your home directory on the ACCRE filesystem.  It should be empty with the exception of a few automatically-generated files.
 
 ### GPU Users ONLY
-f you're using the GPU, you have a few additional steps you may need to do before you clone the repository.  This is because you need to make sure you're using the GPU local memory and not your home directory on ACCRE's default filesystem.  This is a consequence of the "small file" problem; when writing small files across the type of filesystem that ACCRE has, this can cause your program to run exquisitely slowly.  You want to avoid this, and thus, we use `${ACCRE_RUNTIME_DIR}`, a variable which stores the location of the local GPU memory.  This is the location to which you will clone your repository.
+If you're using the GPU, you have a few additional steps you may need to do before you clone the repository.  This is because you need to make sure you're using the GPU local memory and not your home directory on ACCRE's default filesystem.  This is a consequence of the "small file" problem; when writing small files across the type of filesystem that ACCRE has, this can cause your program to run exquisitely slowly.  You want to avoid this, and thus, we use `${ACCRE_RUNTIME_DIR}`, a variable which stores the location of the local GPU memory.  This is the location to which you will clone your repository.
 
 To get to this location, look on the upper right hand side of the screen and click the `New` drop-down menu.  Click `Terminal`.  This will open up a bash terminal.
 
