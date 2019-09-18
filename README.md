@@ -3,8 +3,8 @@
 This repository contains code snippets, documentation, and details on how to perform tasks of interest.  The audience of the different how-tos will vary, so feel free to use/tailor the instructions to your familiarity level.
 
 ## How-to's available
-1. `accre-basic-howto`: this subdirectory details how to access the portal for Jupyter notebooks on ACCRE and clone a project onto it
-2. `accre-virtual-envs-howto`: this subdirectory details how to create and use your own custom virtual environment on ACCRE
+1. `accre-basic-howto`: this how-to details how to obtain an ACCRE account, access the portal for Jupyter notebooks on ACCRE, clone a project repository onto ACCRE, and run cells in the Jupyter notebook
+2. `accre-virtual-envs-howto` (soon): this how-to details how to create and use your own custom virtual environment on ACCRE
 
 ## Installation
 To work with this repository and the collections of how-tos herein, you will most likely want to install *at least* Git to clone and work with the code in this repository.  Further instructions will be found in the `readme.md` file of the subdirectory for your selected how-to.
@@ -18,7 +18,9 @@ Git provides version control and facilitates collaboration between project contr
 
 You can install Git from [here](https://git-scm.com/downloads) for your operating system.  For Mac OSX, you may need to install the XCode Commnand Line tools.  This can be done by typing `git --version` in your terminal.  If git is not installed, this should prompt you to install XCode tools.
 
-### Repo download
+### Repo download (Optional)
+**Note**: You may or may not need to clone this repository to follow your desired how-to.  Additionally, it may be difficult to read the readme file without the rendering that GitHub provides.  A good workflow is to have the how-to readme via GitHub open in one tab, and follow the installation instructions (e.g., cloning this repository) indicated by this how-to readme in other browser tabs or programs if necessary.
+
 To locally clone this repo:
 1. Scroll up and click the bright green `Clone or download` button.  
 2. Click the clipboard next to the URL of the repository.  This will copy the repository link.
