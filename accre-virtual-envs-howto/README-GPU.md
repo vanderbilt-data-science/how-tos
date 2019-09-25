@@ -19,11 +19,15 @@ Now that you've made your options for your Jupyter work environment click `Launc
 ## Creating the VE
 Now, you will create a VE.  The reason you may want to create a VE is because sometimes, packages don't "play nice" together.  For example, installing `Package 1` requires upgrading/downgrading package versions that `Package 2` you used in another project might depend on.  Now, `Package 2` might have unexpected behavior when you try to use it in your other project!
 
-Creating separate environments (i.e., VEs) can assuage these types of issues for you.  To create one, open up a terminal in Jupyter by going to the upper right hand side of your screen and clicking the `New` button, and select `Terminal` from the drop-down menu that appears.  In the terminal, type `pwd` to view your current directory.  Ensure it is something of the form `/home/my_vunetid`.  Now, you will create your VE in your home directory on ACCRE's filesystem.  In the following code, we will create a VE called `test-env`.  \**See notes about additional package installation [below](#installing-other-packages).
+Creating separate environments (i.e., VEs) can assuage these types of issues for you.  To create one, open up a terminal in Jupyter by going to the upper right hand side of your screen and clicking the `New` button, and select `Terminal` from the drop-down menu that appears.  In the terminal, type `pwd` to view your current directory.  Ensure it is something of the form `/home/my_vunetid`.  Now, you will create your VE in your home directory on ACCRE's filesystem.  In the following code, we will create a VE called `test-env`, and we will install a package called `anaconda`.  You should substitute the name of your package(s) if you already know what packages you're interested in.  \**See notes about additional package installation [below](#installing-other-packages).
 
 To do this, type the following:
 ```
 conda create -n test-env anaconda
+```
+If you wanted to install several packages (e.g., we're installing `pandas`, `scikit-learn`, and `matplotlib` here) simultaneously while creating your VE (here called `ds-env`), you could write something of the form:
+```
+conda create -n ds-env pandas scikit-learn matplotlib
 ```
 Either press `Enter` or `y` then `Enter` when the prompt appears asking you whether you want to install the packages it has listed.  The packages will begin to install.  Don't worry if the process appears to hang or seems to take a long time.  This can take 30+ minutes and appear to have no progress until it simply just finishes.  You can determine when it has finished when it gives you a notification about how to activate the VE and then shows the bash prompt.  Now, activate your created VE:
 ```
@@ -39,11 +43,11 @@ conda install tensorflow-gpu=1.3
 ```
 ### Installing other packages
 
-Also note that you may (and should) install non-default Conda packages in the creation of the VE (see Conda documentation [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for more information).  For example, if you already knew you wanted to install the `tensorflow-gpu` package, version 1.3, with a VE named `tf-gpu`, you could enter:
+Also note that you may (and should) install your desired Conda packages in the creation of the VE (see Conda documentation [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for more information).  For example, if you already knew you wanted to install the `tensorflow-gpu` package, version 1.3, with a VE named `tf-gpu`, you could enter:
 ```
 conda create -n tf-gpu tensorflow-gpu=1.3
 ```
-Another example is the fast.ai package, which requires installation from the fastai channel, which could be created as:
+Another example is the fast.ai package, which requires installation from the fastai channel (indicated by the `-c` flag), which could be created as:
 ```
 conda create -n fastai-env -c fastai fastai
 ```
