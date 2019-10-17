@@ -14,7 +14,7 @@ To connect to the printer on Windows, execute the following steps:
 - **Hostname or IP address**: 10.68.0.77
 - [X] Query the printer and automatically select the driver to use
 7.  Wait for the driver model to be detected.  Don't worry if this seems to take a while - be patient!
-8.  Click `Next` or `OK` on any resultant steps.  Make sure to **unclick** the `Share this Printer` option.
+8.  Click `Next` or `OK` on any resultant steps.  Make sure to **click** the `Do not share this printer` option.
 The printer is now installed!
 
 ## MacOSX
