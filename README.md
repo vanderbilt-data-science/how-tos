@@ -3,9 +3,16 @@
 This repository contains code snippets, documentation, and details on how to perform tasks of interest.  The audience of the different how-tos will vary, so feel free to use/tailor the instructions to your familiarity level.
 
 ## How-to's available
-1. `accre-basic-howto`: this how-to details how to obtain an ACCRE account, access the portal for Jupyter notebooks on ACCRE, clone a project repository onto ACCRE, and run cells in the Jupyter notebook
-2. `accre-virtual-envs-howto`: this how-to details how to create and use your own custom virtual environment on ACCRE
-3. `DSI-tasks/add-dsi-printer.md`: this how-to describes how to add the DSI Vanderbilt-networked printer for Windows and OSX computers.
+### A.  ACCRE
+  1. `accre-basic-howto/`: this how-to details how to obtain an ACCRE account, access the portal for Jupyter notebooks on ACCRE, clone a project repository onto ACCRE, and run cells in the Jupyter notebook
+  2. `accre-virtual-envs-howto/`: this how-to details how to create and use your own custom virtual environment on ACCRE
+  
+### B.  Jupyter notebooks
+  1. `jupyter/connect-console.md`: this how-to provides a method for avoiding inline, excess `print` or output statements for investigating variable values in classical Jupyter notebooks
+  
+### C.  General DSI
+  1. `DSI-tasks/add-dsi-printer.md`: this how-to describes how to add the DSI Vanderbilt-networked printer for Windows and OSX computers.
+
 
 ## Installation
 To work with this repository and the collections of how-tos herein, you will most likely want to install *at least* Git to clone and work with the code in this repository.  Further instructions will be found in the `readme.md` file of the subdirectory for your selected how-to.
