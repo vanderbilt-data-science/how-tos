@@ -37,7 +37,7 @@ Navigate to the top menu and click on `Interactive Apps`.  From the dropdown men
 - **Use a virtual environment checkbox**: `uncheck`
 - **Python or Conda Virtual Environment**: `leave blank`
 
-Ask your collaborator more about these settings.  For example, if using fast.ai, you may want to use a `Turing` GPU architecture with the `Python/3.6.3 GCC/6.4.0-2.28` Python version in the virtual environment stored at `/labs/accre_public/pascal/fast.ai.v2`.  Ask them - they'll know!
+Ask your collaborator more about these settings.  For example, if using fast.ai, you may want to use a `Pascal` GPU architecture with the `Python/3.6.3 GCC/6.4.0-2.28` Python version in the virtual environment stored at `/labs/accre_public/pascal/fast.ai.v2`.  Ask them - they'll know!
 
 ### CPU Jupyter Default Options
 - **Number of hours**: `4`
