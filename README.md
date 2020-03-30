@@ -5,7 +5,9 @@ This repository contains code snippets, documentation, and details on how to per
 ## How-to's available
 ### A.  ACCRE
   1. `accre-basic-howto/`: this how-to details how to obtain an ACCRE account, access the portal for Jupyter notebooks on ACCRE, clone a project repository onto ACCRE, and run cells in the Jupyter notebook
-  2. `accre-virtual-envs-howto/`: this how-to details how to create and use your own custom virtual environment on ACCRE
+  2. `accre-virtual-envs-howto/`: this how-to details how to create and use your own custom virtual environments on ACCRE  
+    - `README-GPU.md`: describes how to create a custom virtual environment on ACCRE  
+    - `README-from-yml.md`: describes how to create a virtual environment from a yml file stored in a remote repository by cloning
   
 ### B.  Jupyter notebooks
   1. `jupyter/connect-console.md`: this how-to provides a method for avoiding inline, excess `print` or output statements for investigating variable values in classical Jupyter notebooks
