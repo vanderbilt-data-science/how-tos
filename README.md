@@ -44,3 +44,14 @@ git clone https://github.com/vanderbilt-data-science/how-tos
 Press enter.
 
 Congratulations, you've cloned the repository.  This is your first step.  Now, open your file explorer and navigate to your new folder.  After you click on it, find the subdirectory for your how-to.  Follow the steps in the readme file to perform your desired task.
+
+### D.  Use Branching from within RStudio (mostly)
+
+Branching allows you to add features to a code base in a safe manner when you are collaborating with other data scientists and coders. GitHub Flow is an approach to branching where you branch and merge frequently (see https://www.creativebloq.com/web-design/choose-right-git-branching-strategy-121518344 an overview, and http://scottchacon.com/2011/08/31/github-flow.html for a full description). 
+
+See `github-tasks/github-flow-r` for a tutorial on how to use GitHub Flow for branching
+
+*Make sure you've got git installed and working with RStudio (see https://happygitwithr.com/).*
+
+## Installation
+To work with this
