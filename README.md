@@ -52,6 +52,3 @@ Branching allows you to add features to a code base in a safe manner when you ar
 See `github-tasks/github-flow-r` for a tutorial on how to use GitHub Flow for branching
 
 *Make sure you've got git installed and working with RStudio (see https://happygitwithr.com/).*
-
-## Installation
-To work with this
